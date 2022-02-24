@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="notifications">
+            <div class="left">
+                <i class="fa-solid fa-signal"></i> 20:45 <i class="fa-solid fa-clock"></i> <i class="fa-solid fa-bell"></i>  <i class="fa-solid fa-wifi"></i>
+            </div>
+        </div>
+        <div class="app-body">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="">
+                <p><strong>EventHub</strong></p>
+            </div>
+            <div class="return-area">
+                <a class="fa-solid fa-chevron-left" href="index.html"></a>
+                <p><strong>Select Pictures!</strong></p>
+            </div>
+            <div class="photosGalery2" id="photosGalery2">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+                <img src="img/mountain.jpg" alt="" class="photoselect">
+            </div>
+            
+
+            <a href="withphotos.html" class="btn-center">Import</a>
+        </div>
+    </div>
+    <script>
+        let photosGalery = document.getElementById("photosGalery2");
+        photosGalery.addEventListener("click", event => {
+            if (event.target.classList.contains("photoselect")) {
+                if (event.target.classList.contains("active")) {
+                    event.target.classList.remove("active");
+                } else {
+                    event.target.classList.add("active");
+                }
+            }
+        });
+    </script>
+</body>
+</html>

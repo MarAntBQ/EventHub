@@ -1,0 +1,241 @@
+@font-face {
+  font-family: MyHelvetica;
+  src: url(fonts/Helvetica.ttf);
+}
+@font-face {
+  font-family: MyHelveticaBold;
+  src: url(fonts/Helvetica-Bold.ttf);
+}
+body {
+  font-family: MyHelvetica;
+}
+body strong {
+  font-family: MyHelveticaBold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .phone {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  height: 500px;
+  min-height: 500px;
+  max-height: 500px;
+  border: 6px solid #0a0e0a;
+  border-left: 10px solid #0a0e0a;
+  border-right: 10px solid #0a0e0a;
+  border-radius: 30px;
+  overflow: hidden;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1) !important;
+}
+body .phone .notifications {
+  font-size: 11px;
+  color: #3a3938;
+  background: rgba(128, 128, 128, 0.158);
+  padding: 5px 10px;
+  user-select: none;
+}
+body .phone .app-body {
+  scrollbar-width: thin;
+  scrollbar-color: #ec8e23 #ef3b24;
+  height: calc(100% - 22px);
+  overflow-y: auto;
+}
+body .phone .app-body,
+body .phone .app-body * {
+  box-sizing: border-box;
+}
+body .phone .app-body::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+body .phone .app-body::-webkit-scrollbar-track {
+  background: #ef3b24;
+}
+body .phone .app-body::-webkit-scrollbar-thumb {
+  background-color: #ec8e23;
+}
+body .phone .app-body .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: white;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1) !important;
+}
+body .phone .app-body .logo-container img {
+  display: block;
+  width: 30px;
+}
+body .phone .app-body .logo-container p {
+  font-size: 20px;
+  color: #ef3b24;
+}
+body .phone .app-body .return-area {
+  margin-top: 50px;
+  font-size: 15px;
+  padding: 5px 0px;
+  color: #3a3938;
+}
+body .phone .app-body .return-area a {
+  color: #3a3938;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .phone .app-body .return-area a:hover {
+  color: #ec8e23;
+}
+body .phone .app-body .return-area p {
+  padding: 5px;
+  padding-left: 8px;
+  font-size: 18px;
+}
+body .phone .app-body .place-before {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+body .phone .app-body .place-before img {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+body .phone .app-body .place-before .place-title {
+  font-size: 12px;
+  padding-left: 3px;
+}
+body .phone .app-body .place-before .place-title p:nth-child(1) {
+  font-weight: bold;
+  color: #ec8e23;
+}
+body .phone .app-body .place-before .place-title p:nth-child(2) {
+  font-size: 10px;
+  color: #3a3938;
+}
+body .phone .app-body textarea {
+  width: 94%;
+  min-width: 94%;
+  max-width: 94%;
+  height: 25%;
+  min-height: 25%;
+  max-height: 25%;
+  border: 0px;
+  background: #f0f0f0;
+  color: #0a0e0a;
+  padding: 10px;
+  font-family: inherit;
+  display: block;
+  font-size: 13px;
+  margin: 5px auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ec8e23 #ef3b24;
+}
+body .phone .app-body textarea:focus {
+  outline: 0;
+}
+body .phone .app-body textarea,
+body .phone .app-body textarea * {
+  box-sizing: border-box;
+}
+body .phone .app-body textarea::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+body .phone .app-body textarea::-webkit-scrollbar-track {
+  background: #ef3b24;
+}
+body .phone .app-body textarea::-webkit-scrollbar-thumb {
+  background-color: #ec8e23;
+}
+body .phone .app-body .stars-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5px 10px;
+}
+body .phone .app-body .stars-container .rate {
+  color: #676767;
+  cursor: pointer;
+}
+body .phone .app-body .stars-container .rate:hover {
+  color: #0a0e0a;
+}
+body .phone .app-body .stars-container .rate .fa-star {
+  transition: 0.3s;
+}
+body .phone .app-body .stars-container .rate .fa-star:hover, body .phone .app-body .stars-container .rate .fa-star.active {
+  color: #3eb767;
+}
+body .phone .app-body .stars-container .fa-camera {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ec8e23;
+  color: white;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+}
+body .phone .app-body .stars-container .fa-camera:hover {
+  background: #ef3b24;
+}
+body .phone .app-body .btn-center {
+  display: block;
+  text-align: center;
+  background: #3eb767;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  margin: 10px auto;
+  transition: 0.3s;
+}
+body .phone .app-body .btn-center:hover {
+  background: #ef3b24;
+}
+body .phone .app-body .photosGalery {
+  margin: 2.5px;
+  display: flex;
+  justify-content: space-around;
+}
+body .phone .app-body .photosGalery img {
+  width: 50px;
+  height: 50px;
+}
+body .phone .app-body .photosGalery2 {
+  margin: 2.5px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .phone .app-body .photosGalery2 img {
+  width: 72px;
+  height: 72px;
+  margin: 5px;
+  border: 2px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body .phone .app-body .photosGalery2 img.active {
+  border: 2px solid #ec8e23;
+}
