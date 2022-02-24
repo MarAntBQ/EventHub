@@ -24,8 +24,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/banner.jpg);
 }
 body .phone {
+  background: white;
   width: 280px;
   min-width: 280px;
   max-width: 280px;
